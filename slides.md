@@ -367,12 +367,17 @@ We went from originally 30 minutes to 5 minutes! That's a 6x performance increas
 
 ## Was it worth it?
 - It depends. 
-- 10% cost saving is a lot of money 
-- It could be not worth it if you have to spend a lot of time dealing with the horrible NodeJS ecosystem
+- 10% cost saving is still a lot of money 
+- The JS ecosystem is horrible. We have to do a lot of workarounds to make it work. Those time could be spent on other things
+- If you are writing NodeJS 8 hours a day, then it's probably worth it. It's the process of perfecting your craft
 
 ## Personal thoughts
 - Learning purposes: I had a lot of fun doing this and learned quite a lot about the NodeJS toolings space
-- I think this would be a lot easier if GitHub Actions support ARM64 Runner, which I believe will happen in the near future since people are moving to ARM-based machines
+- It's less about the ARM and the JS stuff, but more about keeping the curiosity and the excitement to play with new things
+- I think this would be a lot easier if GitHub Actions support ARM64 Runner natively, which I believe *will happen in the near future* since people are moving to ARM-based machines
 ---
+# The slides are available at
+[GitHub](https://github.com/qngdt/coderpush-graviton-techtalk)
+
 # Questions?
 - I'm open to any question that even isn't related to this topic (e.g Kubernetes, AWS, etc)
