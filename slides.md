@@ -1,7 +1,8 @@
 # How we cut 10% of our AWS bill by using ARM-based instances in Cohart
 ### 14-09-2023
+- The talk will be highly relevant to NodeJS developers. But hopefully you could still learn something from it even if you're not
 
-This presentation is purely made by Markdown btw. Pretty cool I know!
+*This presentation is purely made by Markdown btw. Pretty cool I know!*
 ---
 # Introduction: What is Graviton
 
@@ -15,7 +16,7 @@ This presentation is purely made by Markdown btw. Pretty cool I know!
 
 It's much more common than you think.
 
-If you're using the M1 Macbook, then you're using ARM-based CPU!
+*If you're using the M1 Macbook, then you're using ARM-based CPU!*
 ---
 # How to utilize it
 
@@ -23,6 +24,9 @@ If you're using the M1 Macbook, then you're using ARM-based CPU!
 - For running your own software: you need to compile it for ARM64
   - Not all softwares have support for ARM64 (The initial M1 launch)
   - You have to compile your software to be able to run on ARM64
+```bash
+$ GOARCH=arm64 go build myapp
+```
 ---
 # The case of Cohart
 - Our backend services are written in NodeJS + TypeScript
@@ -371,3 +375,4 @@ We went from originally 30 minutes to 5 minutes! That's a 6x performance increas
 - I think this would be a lot easier if GitHub Actions support ARM64 Runner, which I believe will happen in the near future since people are moving to ARM-based machines
 ---
 # Questions?
+- I'm open to any question that even isn't related to this topic (e.g Kubernetes, AWS, etc)
